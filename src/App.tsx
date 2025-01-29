@@ -1,7 +1,6 @@
 import React from "react";
-import MemoPad from "./components/MemoPad"; // MemoPad 컴포넌트를 불러옵니다.
+import MemoPad from "./components/MemoPad";
 
-// App 컴포넌트는 특별히 props가 없기 때문에 React.FC를 사용
 const App: React.FC = () => {
   return (
     <div>
@@ -11,3 +10,16 @@ const App: React.FC = () => {
 };
 
 export default App;
+
+//GitHub Page Deploy
+//1. npm run build
+//2. npm run deploy
+
+//Vite Web Project Test Dev Enrivorment
+//1. npm run dev
+
+//GitHub Deploy
+//1. git status
+//2. git add .
+//3. git commit "Main"
+//4. git origin main

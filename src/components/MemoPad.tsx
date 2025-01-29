@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-// MemoPad 컴포넌트 정의
 const MemoPad: React.FC = () => {
   // 상태 선언: 메모 내용은 문자열로 지정
   const [text, setText] = useState<string>("");
