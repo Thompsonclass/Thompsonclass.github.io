@@ -1,4 +1,5 @@
 
+/*
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -14,9 +15,9 @@ createRoot(document.getElementById('root')!).render(
     </Router>
   </StrictMode>
 );
+*/
+//npm run dev : 개발시 사용, 밑에 코드 사용할 것
 
-//npm run dev : 개발시 사용
-/*
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { HashRouter, Route, Routes } from 'react-router-dom';
@@ -32,4 +33,4 @@ createRoot(document.getElementById('root')!).render(
         </HashRouter>
       </StrictMode>
     );
-*/
+

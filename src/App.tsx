@@ -21,5 +21,5 @@ export default App;
 //GitHub Deploy
 //1. git status
 //2. git add .
-//3. git commit "Main"
-//4. git origin main
+//3. git commit -m "update"
+//4. git push origin main

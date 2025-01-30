@@ -1,44 +1,55 @@
 import React, { useState } from "react";
+import TodoItem from "./TodoItem"
 
+type MemoPad = {
+  task: string; //name이라는 문자열 타입의 props
+}
 const MemoPad: React.FC = () => {
-  // 상태 선언: 메모 내용은 문자열로 지정
-  const [text, setText] = useState<string>("");
+//React.FC: 리액트 컴포넌트 타입을 나타냄.
 
-  // 메모 내용 입력을 처리하는 함수
-  const handleTextChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
-    setText(event.target.value); // 텍스트를 상태로 업데이트
+  const message = "hello";
+  console.log(message);
+
+  const message1: string = "hello2";
+  console.log(message1);
+  //message: string은 message가 문자열 타입임을 명시.
+
+  let age: number = 25; //정수
+  let name1: string = "JOHN"; //문자열
+  let isOnline: boolean = true; //논리
+  let numbers: number[] = [1,2,3]; // 정수 배열
+  let person: {name : string; age : number} = { name: "Alice", age: 30}; // 문자 배열
+  function add(a: number, b: number): number { 
+    return a + b;
+  }; // 함수
+
+  const [tasks, setTasks] = useState<string[]>([]);
+  const [input, setInput] = useState<string>("");
+
+  const addTask = () => {
+    if (input.trim() === "") return;
+    setTasks([...tasks, input]);
+    setInput("");
   };
 
   return (
-    <div style={{ padding: "20px", fontFamily: "Arial" }}>
-      <h1>📝 Simple Memo Pad</h1>
-      <textarea
-        style={{
-          width: "100%",
-          height: "200px",
-          padding: "10px",
-          fontSize: "16px",
-        }}
-        placeholder="Type your memo here..."
-        value={text} // 상태에 저장된 텍스트를 출력
-        onChange={handleTextChange} // 텍스트가 변경되면 상태 업데이트
+    <div>
+      <h1>Todo List</h1>
+      <input
+        type="text"
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+        placeholder="Add a task"
       />
-      <button
-        style={{
-          marginTop: "10px",
-          padding: "10px 20px",
-          backgroundColor: "#4caf50",
-          color: "white",
-          border: "none",
-          borderRadius: "5px",
-          cursor: "pointer",
-        }}
-        onClick={() => alert(`Your Memo:\n\n${text}`)} // 버튼 클릭 시 메모 내용을 알림으로 표시
-      >
-        Save Memo
-      </button>
+      <button onClick={addTask}>Add</button>
+      <ul>
+        {tasks.map((task, index) => (
+          <TodoItem  key={index} task={task} />
+        ))}
+      </ul>
     </div>
   );
 };
 
 export default MemoPad;
+
