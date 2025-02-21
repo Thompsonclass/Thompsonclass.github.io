@@ -1,6 +1,62 @@
 import React, { useState } from "react";
-import "../css/MemoPad.css"; // CSS 파일 import
+import styled from "styled-components";
 import MemoItem from "./MemoItem";
+
+const MemoPadContainer = styled.div`
+  font-family: Arial, sans-serif;
+  background-color:rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400vh;
+  padding: 20px;
+  margin: 20px;
+`;
+
+const IntroSection = styled.section`
+  background-color: #ffffff;
+  padding: 100px;
+  border-radius: 20px;
+  box-shadow: 0 4px 80px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  text-align: center;
+`;
+
+const TaskInputContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+`;
+
+const TaskInput = styled.input`
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+`;
+
+const AddButton = styled.button`
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+`;
+
+const TaskList = styled.ul`
+  padding: 5px;
+  margin: 5px;
+`;
+
+
 
 const MemoPad: React.FC = () => {
   const [tasks, setTasks] = useState<string[]>([]);
@@ -16,10 +72,9 @@ const MemoPad: React.FC = () => {
     const newTasks = tasks.filter((_, i) => i !== index);
     setTasks(newTasks);
   };
-
   
   return (
-    <div className="memopad-container">
+    <MemoPadContainer>
       <h1>지식의 경계를 넓히는 개발자</h1>
       <h2>무지보다는 배움이라는 길을 걷는 것을 좋아합니다. <br />
           새로운 기술을 익히고 이를 통해 보다 나은 결과를 만들어내기 위해 팀원들과 협력하고 있습니다.
@@ -28,7 +83,7 @@ const MemoPad: React.FC = () => {
           저는 항상 새로운 것을 배우고, 이를 실무에 적용하여 더 나은 개발자로 성장하는 여정을 이어가고자 합니다.
           이러한 과정 속에서 협력의 중요성을 깨닫고, 팀워크를 통해 함께 성장하는 경험을 소중히 여기고 있습니다.</h2>
       {/* 소개 섹션 */}
-      <section className="memopad-intro">
+      <IntroSection>
         <h1>응급드론 시스템</h1>
         <h4>
           이 프로젝트는 드론을 활용하여 응급환자의 상태를 실시간으로 모니터링하고 필요한 의료물품을 신속하게 전달함으로써 골든타임을 확보하고 생존율을 높이는 것을 목표로 하였습니다.
@@ -155,27 +210,27 @@ const MemoPad: React.FC = () => {
         <a href="https://github.com/Thompsonclass" target="_blank" rel="noopener noreferrer">
           GitHub 프로필 보기
         </a>
-      </section>
+      </IntroSection>
 
       {/* Todo List 섹션 */}
-      <section className="todo-section">
+      <section>
         <h2>메모</h2>
-        <div className="input-container">
-          <input
+        <TaskInputContainer>
+          <TaskInput
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Add a task"
           />
-          <button onClick={addTask}>추가</button>
-        </div>
-        <ul className="task-list">
+          <AddButton onClick={addTask}>추가</AddButton >
+        </TaskInputContainer>
+        <TaskList>
           {tasks.map((task, index) => (
             <MemoItem task={task} index={index} onDelete={deleteTask} key={index} />
           ))}
-        </ul>
+        </TaskList>
       </section>
-    </div>
+    </MemoPadContainer>
   );
 };
 
