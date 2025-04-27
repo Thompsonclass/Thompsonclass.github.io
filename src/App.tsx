@@ -23,3 +23,6 @@ export default App;
 //2. git add .
 //3. git commit -m "update"
 //4. git push origin main
+
+//GitHub Pull
+//1. git pull
