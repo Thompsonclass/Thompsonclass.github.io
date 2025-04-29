@@ -78,6 +78,18 @@ const GithubLink = styled.a`
   }
 `;
 
+const BlogLink = styled.a`
+  display: inline-block;
+  margin-top: 20px;
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
 const Paragraph = styled.p`
   margin-bottom: 10px;
   line-height: 1.6;
@@ -117,7 +129,13 @@ const MemoPad: React.FC = () => {
         <SubTitle>기술 스택</SubTitle>
         <Paragraph>JavaScript, TypeScript, Dart, Java, Python, React, Flutter, Node.js, 
           Express.js, Spring Boot, MariaDB, YOLOv8, MediaPipe, OpenCV, Raspberry Pi, RTMP, HTML5 Audio API</Paragraph>
-
+          <GithubLink href="https://github.com/Thompsonclass" target="_blank" rel="noopener noreferrer">
+          GitHub 보러가기
+        </GithubLink>
+        <br />
+        <BlogLink href="https://thompsonclass.tistory.com/" target="_blank" rel="noopener noreferrer">
+          블로그 보러가기
+        </BlogLink>
         <SubTitle>프로젝트 목록</SubTitle>
         <InfoTable>
           <thead>
@@ -139,11 +157,6 @@ const MemoPad: React.FC = () => {
               <td>손동작 인식 기반 스마트 홈 제어</td>
             </tr>
             <tr>
-              <td>BGM 웹 플레이리스트</td>
-              <td>2023.08 ~ 2023.12</td>
-              <td>사용자 맞춤형 BGM 재생 웹앱</td>
-            </tr>
-            <tr>
               <td>OnePointUp</td>
               <td>2025.03 ~ 2023.07</td>
               <td>GPT 기반 자기계발 애플리케이션</td>
@@ -153,12 +166,13 @@ const MemoPad: React.FC = () => {
               <td>2025.03 ~ 2023.07</td>
               <td>노트북 과사용 피로도 측정 및 예방 시스템</td>
             </tr>
+            <tr>
+              <td>BGM 웹 플레이리스트</td>
+              <td>2023.08 ~ 2023.12</td>
+              <td>사용자 맞춤형 BGM 재생 웹앱</td>
+            </tr>
           </tbody>
         </InfoTable>
-
-        <GithubLink href="https://github.com/Thompsonclass" target="_blank" rel="noopener noreferrer">
-          GitHub 프로필 보러가기
-        </GithubLink>
       </Section>
       {/* 소개 섹션 */}
       <IntroSection>
@@ -245,46 +259,6 @@ const MemoPad: React.FC = () => {
         </Section>
         <hr />
 
-        <ProjectTitle>BGM 웹 플레이 리스트</ProjectTitle>
-        <Section>
-        이 프로젝트는 사용자가 원하는 배경음악(BGM)을 자유롭게 추가, 재생 및 관리할 수 있도록 하는 웹 기반 플레이리스트 시스템을 개발하는 것을 목표로 하였습니다.<br />
-        프로젝트를 진행하며 단순한 음악 재생 기능을 넘어, 사용자가 선호하는 음악을 쉽게 저장하고 관리할 수 있는 기능이 중요하다는 것을 깨달았습니다. 이를 위해 React를 기반으로 한 직관적인 UI를 설계하고, Node.js와 Express.js를 활용하여 백엔드에서 사용자 데이터를 안정적으로 처리할 수 있도록 구현하였습니다.
-        기술적으로는 오디오 재생 기능을 최적화하기 위해 HTML5 Audio API를 활용하였으며, CORS 정책을 고려한 서버 설정과 데이터 전송 최적화에도 집중하였습니다. 또한, 사용자 경험을 개선하기 위해 볼륨 조절, 재생/일시정지, 플레이리스트 추가/삭제 기능을 포함하여 음악 관리의 편의성을 극대화하였습니다.
-        </Section>
-        <hr />
-        <h1>소개</h1>
-        <Section>
-        React와 Node.js를 활용하여 사용자가 자유롭게 음악을 추가, 재생, 일시정지할 수 있는 플레이리스트 시스템을 구축하였으며, 직관적인 UI와 원활한 오디오 컨트롤을 통해 최적의 사용자 경험을 제공하는 것을 목표로 하였습니다.
-       </Section>
-        <h1>기간/인원</h1>
-        <Section>
-          2023년 8월 28일 ~ 12월 19일 / FE 2인, 지원자 BE, 총 3인 팀 프로젝트
-        </Section>
-        <h1>핵심 기능</h1>
-        <Section>
-        - 사용자가 원하는 BGM을 등록하고 플레이리스트 생성<br />
-        - HTML5 Audio API를 활용한 오디오 재생 및 제어(재생/정지/볼륨 조절 등)<br />
-        - 플레이리스트 데이터의 서버 저장 및 관리 기능 구현
-        </Section>
-        <h1>팀 성과</h1>
-        <Section>
-        - React 기반 직관적인 웹 UI설계 및 구현<br />
-        - Node.js + Express.js 백엔드 구축 및 API 개발<br />
-        - 음악 데이터 스트리밍 최적화 및 CORS 문제 해결
-       </Section>
-        <h1>지원자 개인 기여</h1>
-        <Section>
-        - 오디오 재생 및 플레이리스트 관리 기능 구현<br />
-        - 백엔드 API 설계 및 데이터 연동
-       </Section>
-        <h1>세부 내용</h1>
-        <Section>
-        - 오디오 재생 및 플레이리스트 관리 기능 구현: HTML5 Audio API를 활용하여 음악 재생, 볼륨 조절, 플레이리스트 추가/삭제 기능 개발<br />
-        - 백엔드 API 설계 및 데이터 연동: Node.js와 Express.js를 사용하여 사용자별 플레이리스트 데이터 저장 및 관리 기능 구축<br />
-        - CORS 문제 해결: 프론트엔드와 백엔드 간 HTTP 요청 시 발생하는 CORS 정책 문제를 해결하여 원활한 데이터 통신 보장
-        </Section>
-
-        <hr />
         <ProjectTitle>OnePointUp</ProjectTitle>
         <Section>
         이 프로젝트는 사용자가 설정한 목표를 기반으로 GPT-4가 맞춤형 계획을 자동으로 생성하고, 
@@ -371,6 +345,46 @@ const MemoPad: React.FC = () => {
         거리 측정 기능 구현 : 얼굴의 크기 및 위치를 기반으로 웹캠과 사용자의 거리를 계산하고, 30cm 이하일 경우 경고 시스템 작동<br />
         OpenCV 기반 영상 처리 : YOLOv8m, MediaPipe 결과를 종합하여 프레임 단위로 실시간 데이터 분석<br />
         경고 및 알림 시스템 구축 : 피로도나 거리 이상 발생 시 팝업 알림으로 사용자에게 즉각적인 휴식 및 자세 교정을 유도<br />
+        </Section>
+        <hr />
+        
+        <ProjectTitle>BGM 웹 플레이 리스트</ProjectTitle>
+        <Section>
+        이 프로젝트는 사용자가 원하는 배경음악(BGM)을 자유롭게 추가, 재생 및 관리할 수 있도록 하는 웹 기반 플레이리스트 시스템을 개발하는 것을 목표로 하였습니다.<br />
+        프로젝트를 진행하며 단순한 음악 재생 기능을 넘어, 사용자가 선호하는 음악을 쉽게 저장하고 관리할 수 있는 기능이 중요하다는 것을 깨달았습니다. 이를 위해 React를 기반으로 한 직관적인 UI를 설계하고, Node.js와 Express.js를 활용하여 백엔드에서 사용자 데이터를 안정적으로 처리할 수 있도록 구현하였습니다.
+        기술적으로는 오디오 재생 기능을 최적화하기 위해 HTML5 Audio API를 활용하였으며, CORS 정책을 고려한 서버 설정과 데이터 전송 최적화에도 집중하였습니다. 또한, 사용자 경험을 개선하기 위해 볼륨 조절, 재생/일시정지, 플레이리스트 추가/삭제 기능을 포함하여 음악 관리의 편의성을 극대화하였습니다.
+        </Section>
+        <hr />
+        <h1>소개</h1>
+        <Section>
+        React와 Node.js를 활용하여 사용자가 자유롭게 음악을 추가, 재생, 일시정지할 수 있는 플레이리스트 시스템을 구축하였으며, 직관적인 UI와 원활한 오디오 컨트롤을 통해 최적의 사용자 경험을 제공하는 것을 목표로 하였습니다.
+       </Section>
+        <h1>기간/인원</h1>
+        <Section>
+          2023년 8월 28일 ~ 12월 19일 / FE 2인, 지원자 BE, 총 3인 팀 프로젝트
+        </Section>
+        <h1>핵심 기능</h1>
+        <Section>
+        - 사용자가 원하는 BGM을 등록하고 플레이리스트 생성<br />
+        - HTML5 Audio API를 활용한 오디오 재생 및 제어(재생/정지/볼륨 조절 등)<br />
+        - 플레이리스트 데이터의 서버 저장 및 관리 기능 구현
+        </Section>
+        <h1>팀 성과</h1>
+        <Section>
+        - React 기반 직관적인 웹 UI설계 및 구현<br />
+        - Node.js + Express.js 백엔드 구축 및 API 개발<br />
+        - 음악 데이터 스트리밍 최적화 및 CORS 문제 해결
+       </Section>
+        <h1>지원자 개인 기여</h1>
+        <Section>
+        - 오디오 재생 및 플레이리스트 관리 기능 구현<br />
+        - 백엔드 API 설계 및 데이터 연동
+       </Section>
+        <h1>세부 내용</h1>
+        <Section>
+        - 오디오 재생 및 플레이리스트 관리 기능 구현: HTML5 Audio API를 활용하여 음악 재생, 볼륨 조절, 플레이리스트 추가/삭제 기능 개발<br />
+        - 백엔드 API 설계 및 데이터 연동: Node.js와 Express.js를 사용하여 사용자별 플레이리스트 데이터 저장 및 관리 기능 구축<br />
+        - CORS 문제 해결: 프론트엔드와 백엔드 간 HTTP 요청 시 발생하는 CORS 정책 문제를 해결하여 원활한 데이터 통신 보장
         </Section>
       </IntroSection>
     </MemoPadContainer>
