@@ -83,6 +83,18 @@ const Paragraph = styled.p`
   line-height: 1.6;
 `;
 /////////////////////////
+const ProjectTitle = styled.h1`
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+  background-color: #e6f0ff;
+  padding: 12px 20px;
+  margin: 50px 0 20px 0;
+  border-left: 6px solid #007bff;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.1);
+`;
 
 const MemoPad: React.FC = () => {
   return (
@@ -151,7 +163,7 @@ const MemoPad: React.FC = () => {
       {/* 소개 섹션 */}
       <IntroSection>
         <Section>
-        <h1>응급드론 시스템</h1>
+        <ProjectTitle>응급드론 시스템</ProjectTitle>
           이 프로젝트는 드론을 활용하여 응급환자의 상태를 실시간으로 모니터링하고 필요한 의료물품을 신속하게 전달함으로써 골든타임을 확보하고 생존율을 높이는 것을 목표로 하였습니다.
           프로젝트 초기 단계에서는 응급 서비스의 중요성을 깊이 이해하게 되었고, 특히 중증 응급환자의 치료에 있어 시간의 중요성을 깨달았습니다. 드론의 빠른 접근성과 기동성을 통해 기존 구급차의 한계를 극복할 수 있음을 경험하였습니다.
           기술적으로는 실시간 데이터 전송 및 영상 송수신 시스템을 구현하는 과정에서 다양한 프로토콜(RTMP 등)을 활용하여 응급 상황에서의 의사소통을 강화하였습니다. 이 과정에서 팀원들과의 협업을 통해 문제 해결 능력과 기술적 이해도를 높일 수 있었으며,
@@ -193,7 +205,7 @@ const MemoPad: React.FC = () => {
         </Section>
         <hr />
 
-        <h1>제스처 홈 시스템</h1>
+        <ProjectTitle>제스처 홈 시스템</ProjectTitle>
         <Section>
         이 프로젝트는 손동작 제스처 인식 기술을 활용하여 스마트 홈 기기를 비접촉 방식으로 제어하는 시스템을 개발하는 것이 목표였습니다.<br />
         기존의 비효율적이고 비위생적인 터치스크린 방식을 개선하고, 손동작만으로 조작 가능한 스마트 환경을 제공하고자 했습니다.
@@ -233,7 +245,7 @@ const MemoPad: React.FC = () => {
         </Section>
         <hr />
 
-        <h1>BGM 웹 플레이 리스트</h1>
+        <ProjectTitle>BGM 웹 플레이 리스트</ProjectTitle>
         <Section>
         이 프로젝트는 사용자가 원하는 배경음악(BGM)을 자유롭게 추가, 재생 및 관리할 수 있도록 하는 웹 기반 플레이리스트 시스템을 개발하는 것을 목표로 하였습니다.<br />
         프로젝트를 진행하며 단순한 음악 재생 기능을 넘어, 사용자가 선호하는 음악을 쉽게 저장하고 관리할 수 있는 기능이 중요하다는 것을 깨달았습니다. 이를 위해 React를 기반으로 한 직관적인 UI를 설계하고, Node.js와 Express.js를 활용하여 백엔드에서 사용자 데이터를 안정적으로 처리할 수 있도록 구현하였습니다.
@@ -273,7 +285,7 @@ const MemoPad: React.FC = () => {
         </Section>
 
         <hr />
-        <h1>OnePointUp</h1>
+        <ProjectTitle>OnePointUp</ProjectTitle>
         <Section>
         이 프로젝트는 사용자가 설정한 목표를 기반으로 GPT-4가 맞춤형 계획을 자동으로 생성하고, 
         이를 Flutter 앱에 실시간으로 연동하여 목표 달성을 지원하는 시스템을 개발하는 것을 목표로 하였습니다. 
@@ -320,7 +332,7 @@ const MemoPad: React.FC = () => {
         </Section>
         
         <hr />
-        <h1>PC 과사용 예방 시스템</h1>
+        <ProjectTitle>PC 과사용 예방 시스템</ProjectTitle>
         <Section>
         이 프로젝트는 노트북 사용자의 눈 깜빡임, 시선 고정 시간, 그리고 웹캠과 사용자 간 거리를 실시간으로 분석하여 피로도를 측정하고, 피로도가 일정 수준 이상이 되거나 올바르지 않은 사용 환경이 감지될 때 경고를 발생시켜 사용자의 건강을 보호하는 것을 목표로 하였습니다.
         프로젝트를 진행하며 장시간 컴퓨터 사용이 눈 건강 및 신체에 미치는 영향을 심도 있게 이해하게 되었고, 특히 사전 경고 시스템이 건강 유지에 얼마나 중요한지 깨달을 수 있었습니다.
