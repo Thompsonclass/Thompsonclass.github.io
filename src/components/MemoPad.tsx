@@ -208,7 +208,6 @@ const MemoPad: React.FC = () => {
         <Section>
         - 안드로이드 UI 설계 및 로직 구현<br />
         - RTMP 프로토콜 기반 실시간 영상 송수신 구축<br />
-        - Web FE 개발 및 데이터 시각화    <br />
         </Section>
         <h1>세부 내용</h1>
         <Section>
@@ -232,7 +231,7 @@ const MemoPad: React.FC = () => {
         제스처 홈 시스템은 손동작 인식 기술을 활용하여 스마트 홈 기기를 비접촉 방식으로 직관적이고 편리하게 제어할 수 있도록 하는 프로젝트입니다        </Section>
         <h1>기간/인원</h1>
         <Section>
-          2024년 8월 28일 ~ 12월 19일 / HW 1인, AI모델 개발, 지원자 모듈 로직 설계, 총 3인 팀 프로젝트        
+          2024년 8월 28일 ~ 12월 19일 / HW 1인, 지원자 AI모델 개발, 모듈 로직 설계 1인, 총 3인 팀 프로젝트        
         </Section>
         <h1>핵심 기능</h1>
         <Section>
@@ -277,7 +276,7 @@ const MemoPad: React.FC = () => {
        </Section>
         <h1>기간/인원</h1>
         <Section>
-          2025년 3월 04일 ~ 6월 25일 / FE 1인, BE 1인, FM 1인, 총 2인 팀 프로젝트
+          2025년 3월 04일 ~ 6월 25일 / 지원자 FE, BE 1인, FM 1인, 총 3인 팀 프로젝트
         </Section>
         <h1>핵심 기능</h1>
         <Section>
@@ -318,7 +317,7 @@ const MemoPad: React.FC = () => {
        </Section>
         <h1>기간/인원</h1>
         <Section>
-        8월 26일 ~ 12월 29일 / AI 엔지니어 1인, UI/UX 디자이너 1인, 총 2인 팀 프로젝트
+        8월 26일 ~ 12월 29일 / 지원자 AI 모델, 영상 처리 1인, 총 2인 팀 프로젝트
         </Section>
         <h1>핵심 기능</h1>
         <Section>
