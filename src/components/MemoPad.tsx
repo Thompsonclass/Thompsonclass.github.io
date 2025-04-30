@@ -112,7 +112,7 @@ const MemoPad: React.FC = () => {
   return (
     <MemoPadContainer>
       {/* 첫 페이지 - 프로필, 기술 스택, 프로젝트 리스트 */}
-      <Section>
+      <IntroSection>
         <Title>프로필</Title>
         <ProfileImage src="" alt="프로필 사진" />
         <Paragraph><strong>Name : </strong> 강경민</Paragraph>
@@ -173,7 +173,7 @@ const MemoPad: React.FC = () => {
             </tr>
           </tbody>
         </InfoTable>
-      </Section>
+      </IntroSection>
       {/* 소개 섹션 */}
       <IntroSection>
         <Section>
