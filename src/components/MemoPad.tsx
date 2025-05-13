@@ -118,17 +118,19 @@ const MemoPad: React.FC = () => {
         <Paragraph><strong>Name : </strong> 강경민</Paragraph>
         <Paragraph><strong>Email : </strong> thompson7219@gmail.com</Paragraph>
         <Paragraph><strong>Introduction : </strong> 
-        배움을 나침반으로 삼는 개발자입니다. 기술 트렌드의 흐름을 학습의 연료로 삼아, 
-        팀과 함께 복잡한 문제를 해결하는 미래를 설계하고 있습니다. 끊임없는 변화 속에서도 스스로를 
-        업그레이드하기 위해 매일 새롭게 코드를 작성하듯, 지식과 경험을 쌓고 있습니다. 협력의 가치를 최우선으로 여기며, 
-        다양한 시각을 융합해 혁신을 이끄는 것이 목표입니다.
+        배움을 나침반으로 삼는 개발자입니다. 
+        기술 트렌드의 흐름을 학습의 연료로 삼아, 끊임없는 변화 속에서도 스스로를 향상하기
+        위해 매일 새롭게 코드를 작성하듯, 지식과 경험을 쌓고 있습니다. 
+        협력의 가치를 최우선으로 여기며, 다양한 시각을 융합해 혁신을 이끄는 것이 목표입니다.
         기술로 세상을 편리하게 만드는 것뿐만 아니라, 함께 일하는 동료들과의 시너지가 창출하는 가치를 믿기에 
         이러한 과정 속에서 협력의 중요성을 깨닫고, 팀워크를 통해 함께 성장하는 경험을 소중히 여기고 있습니다.
         </Paragraph>
 
         <SubTitle>기술 스택</SubTitle>
-        <Paragraph>JavaScript, TypeScript, Dart, Java, Python, React, Flutter, Node.js, 
-          Express.js, Spring Boot, MariaDB, YOLOv8, MediaPipe, OpenCV, Raspberry Pi, RTMP, HTML5 Audio API</Paragraph>
+        <Paragraph>
+          JavaScript, React, Dart, Java, Spring Boot, Python, Flutter, Node.js, 
+          Express.js, MariaDB, YOLOv8, MediaPipe, Raspberry Pi, HTML, TypeScript
+        </Paragraph>
           <GithubLink href="https://github.com/Thompsonclass" target="_blank" rel="noopener noreferrer">
           GitHub 보러가기
         </GithubLink>
@@ -178,15 +180,21 @@ const MemoPad: React.FC = () => {
       <IntroSection>
         <Section>
         <ProjectTitle>응급드론 시스템</ProjectTitle>
-          이 프로젝트는 드론을 활용하여 응급환자의 상태를 실시간으로 모니터링하고 필요한 의료물품을 신속하게 전달함으로써 골든타임을 확보하고 생존율을 높이는 것을 목표로 하였습니다.
-          프로젝트 초기 단계에서는 응급 서비스의 중요성을 깊이 이해하게 되었고, 특히 중증 응급환자의 치료에 있어 시간의 중요성을 깨달았습니다. 드론의 빠른 접근성과 기동성을 통해 기존 구급차의 한계를 극복할 수 있음을 경험하였습니다.
-          기술적으로는 실시간 데이터 전송 및 영상 송수신 시스템을 구현하는 과정에서 다양한 프로토콜(RTMP 등)을 활용하여 응급 상황에서의 의사소통을 강화하였습니다. 이 과정에서 팀원들과의 협업을 통해 문제 해결 능력과 기술적 이해도를 높일 수 있었으며,
+          이 프로젝트는 드론을 활용하여 응급환자의 상태를 실시간으로 모니터링하고 필요한 의료물품을
+           신속하게 전달함으로써 골든타임을 확보하고 생존율을 높이는 것을 목표로 하였습니다.
+          프로젝트 초기 단계에서는 응급 서비스의 중요성을 깊이 이해하게 되었고,
+           특히 중증 응급환자의 치료에 있어 시간의 중요성을 깨달았습니다.
+            드론의 빠른 접근성과 기동성을 통해 기존 구급차의 한계를 극복할 수 있음을 경험하였습니다.
+          기술적으로는 실시간 데이터 전송 및 영상 송수신 시스템을 구현하는 과정에서
+           다양한 프로토콜(RTMP 등)을 활용하여 응급 상황에서의 의사소통을 강화하였습니다.
+            이 과정에서 팀원들과의 협업을 통해 문제 해결 능력과 기술적 이해도를 높일 수 있었으며,
           결과적으로 응급 의료 서비스의 효율성을 크게 향상시킬 수 있었습니다.
         </Section>
         <hr />
         <h1>소개</h1>
         <Section>
-          드론을 활용하여 응급환자의 상태를 실시간으로 모니터링하고 필요한 의료물품을 신속하게 전달함으로써 골든타임을 확보하고 생존율을 높이는 것을 목표
+          드론을 활용하여 응급환자의 상태를 실시간으로 모니터링하고
+           필요한 의료물품을 신속하게 전달함으로써 골든타임을 확보하고 생존율을 높이는 것을 목표
         </Section>
         <h1>기간/인원</h1>
         <Section>
@@ -247,8 +255,8 @@ const MemoPad: React.FC = () => {
         </Section>
         <h1>지원자 개인 기여</h1>
         <Section>
-        - 스마트 홈 제어 시스템 모듈 로직 설계 및 구현<br />
-        - 손동작 인식 기반 제어 로직 개발 (LED, 서보모터, 선풍기 등)<br />
+        - 특정 손동작 인식 기반 Yolov8s 모델 학습 및 개발<br />
+        - 스마트 홈 제어 시스템 모듈 로직 설계<br />
         </Section>
         <h1>세부 내용</h1>
         <Section>
@@ -294,7 +302,6 @@ const MemoPad: React.FC = () => {
         <Section>
         - Flutter를 활용하여 직관적이고 반응형 UI를 설계하고 구현<br />
         - 사용자 경험(UX)을 고려한 목표 설정 및 계획 관리 화면 디자인<br />
-        - 플러터 앱과 백엔드(Spring Boot) 간의 데이터 연동 및 UI 반영 최적화<br />
         - 실시간 피드백 시스템을 통해 사용자 상호작용을 향상시키는 기능 개발<br />
        </Section>
         <h1>세부 내용</h1>
