@@ -154,9 +154,10 @@ const MemoPad: React.FC = () => {
 
           <Section>
             <SectionTitle>Email</SectionTitle>
-            <Text>Email : thompson7219@gmail.com</Text>
+            <Text>thompson7219@gmail.com</Text>
             <SectionTitle>phoneNumber</SectionTitle>
-            <Text>phoneNumber : 010-7102-4549</Text>
+            <Text>010-7102-4549</Text>
+            <SectionTitle>Git & Blog</SectionTitle>
             <Text>
               <a href="https://github.com/Thompsonclass" target="_blank" rel="noopener noreferrer">
                 GitHub
