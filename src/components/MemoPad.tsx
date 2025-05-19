@@ -322,8 +322,8 @@ const MemoPad: React.FC = () => {
                 </Text>
                 <Subtitle>지원자 기여</Subtitle>
                 <Text>
-                  - 특정 손동작 인식 기반 Yolov8s 모델 학습 및 개발<br />
-                  - 스마트 홈 제어 시스템 모듈 로직 설계<br />
+                - 사용자 목표 및 세부 정보 저장을 위한 REST API 설계 및 구현<br />
+                - MariaDB 기반 데이터베이스 모델링 및 연동<br />
                 </Text>
               </div>
               <div>
